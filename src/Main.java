@@ -1,7 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int studentNumericGrade = 90;
+
+        int studentNumericGrade = 0;
+
+        Scanner myScanner = new Scanner(System.in);
+
+        System.out.println("What's the student's numeric grade?");
+        studentNumericGrade = myScanner.nextInt();
 
         if (studentNumericGrade >= 90) {
             System.out.println("You got an A!");
